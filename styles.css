@@ -66,8 +66,6 @@ nav{
     font-weight: 600;
 }
 
-
-
 /* Navigation Styles End */
 
 /* Banner section Start */
@@ -138,10 +136,7 @@ nav{
 /* banner section End */
 
 
-
-
 /* Videos Section Start */
-
 
 .videos-container h2{
     text-align: center;
@@ -152,7 +147,6 @@ nav{
 
 .funny{
     color: #8568ca;
-
 }
 
 .videos-container p{
@@ -197,12 +191,11 @@ nav{
 
 /* Play Section Start */
 
-
 .play-container{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 0px 300px;
+    margin: 0px 200px;
 }
 
 .play-content{
@@ -227,24 +220,21 @@ nav{
     margin-top: 20px;
 }
 
-.image-position{
+.play-image-two{
     display: block;
     position: relative;
-    bottom: 200px;
+    bottom: 150px;
     right: 100px;
 }
 
 
 /* Play Section End */
 
-
 /* Games Name Section Start */
 
 .game-container{
     margin: 0px 250px 100px 250px;
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
-
-
 }
 
 .game-first-row{
@@ -283,7 +273,6 @@ nav{
     
 }
 
-
 /* Games Name Section End */
 
 
@@ -292,7 +281,6 @@ nav{
 footer{
     background-color: #0B0223;
     padding: 100px;
-
 }
 
 .footer-row-one{
@@ -360,8 +348,6 @@ footer{
     margin-top: 30px;
 }
 
-
-
 /* Footer Section End */
 
 
@@ -369,6 +355,7 @@ footer{
 /* Responsive Styles for Small Device */
 
 @media screen and (max-width:576px) {
+
     .nav-container,
     .nav-menus,
     .banner-container,
@@ -394,24 +381,22 @@ footer{
     }
 
     .banner-position{
-        width: 380px;
+        width: 300px;
         margin: auto;
     }
 
-    .videos-container{
-        max-width: 380px;
-    }
+   .videos-container{
+    width: 90%;
+    padding: 10px;  
+   }
 
-    .videos-container h2{
-        text-align: center;
-        font-size: 1.5rem;
-    }
-    .videos-container p{
-        font-size: 1rem;
-    }
+   .videos-container p{
+    padding: 20px;
+   }
 
     .box-container{
-        margin: 10px 50px;
+        margin: 10px 10px;
+        width: 90%;
     }
 
     .play-container{
@@ -426,9 +411,33 @@ footer{
         font-size: 2rem;
     }
 
+    .play-image{
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .play-image > img{
+        width: 60%;
+    }
+
+    .play-image-two img{
+        width: 35%;
+    }
+
+    .game-container{
+        margin: 30px;
+    }
+
     .game-first-row{
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+    }
+
+    .game-second-row{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
     }
 
     .footer-row-two,
@@ -444,3 +453,104 @@ footer{
     }
 
 }
+
+
+/* Responsive Styles for Medium Device */
+
+@media screen and (min-width:576px) and (max-width:922px) {
+    .nav-container,
+    .banner-container,
+    .play-container
+    {
+        flex-direction: column;
+    }
+
+    .nav-logo{
+        margin-bottom: 20px;
+    }
+
+    .banner-image img{
+        width: 500px
+    }
+
+    .box-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: 20px 20px;
+    }
+
+    .box{
+        width: 300px;
+        margin: 30px;
+    }
+
+
+    .game-container{
+        width: 80%;
+        margin: 50px;
+    }
+
+    .game-first-row{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 20px;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .game-second-row{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 20px;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .play-container{
+        margin: auto;
+    }
+
+    .play-content{
+        text-align: center;
+    }
+
+    .play-content h2{
+        font-size: 2rem;
+    }
+
+    .play-image{
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .play-container{
+        margin: auto;
+    }
+
+    .play-content{
+        text-align: center;
+    }
+
+    .play-content h2{
+        font-size: 2rem;
+    }
+
+    .play-image{
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .play-image > img{
+        width: 70%;
+    }
+
+    .play-image-two img{
+        width: 40%;
+    }
+
+    .play-image-two img{
+        width: 40%;
+        right: 30px;
+    }
+}
+
